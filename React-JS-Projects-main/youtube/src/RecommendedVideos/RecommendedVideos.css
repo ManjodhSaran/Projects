@@ -1,0 +1,15 @@
+.rec-videos {
+  background-color: #f9f9f9;
+  flex: 0.8;
+  padding: 40px 20px;
+}
+
+.rec-videocard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rec-videos > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}

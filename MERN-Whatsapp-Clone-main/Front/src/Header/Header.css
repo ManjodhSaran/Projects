@@ -1,0 +1,27 @@
+.header {
+  height: 200px;
+  background-color: #00bfa5;
+  margin-bottom: -120px;
+}
+
+.header-app-name {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 25px;
+}
+
+.header-logo {
+  font-size: 45px !important;
+}
+
+.header-app-name > h1 {
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    display: none;
+  }
+}

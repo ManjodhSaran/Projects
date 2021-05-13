@@ -1,0 +1,28 @@
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(235, 233, 233);
+}
+
+.chat-header-icon {
+  color: grey;
+}
+.chat-header-attach {
+  transform: rotate(45deg);
+}
+
+.chat-header-user-info {
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.chat-header-user-info > h2 {
+  font-size: 20px;
+}
+
+.chat-header-user-info > p {
+  margin: 0 5px;
+}

@@ -1,0 +1,53 @@
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  /* background-image: url("https://cdn.vox-cdn.com/thumbor/NPWcMYzB04Fd5zBczdN_bLSeYiY=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18331847/acastro_190723_1777_tiktok_0001.0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: #fff;
+  position: relative;
+}
+.app__videos {
+  position: relative;
+  overflow: scroll;
+  height: 800px;
+  max-width: 500px;
+  width: 80%;
+  border-radius: 25px;
+  scroll-snap-type: y mandatory;
+  /* padding: 2px; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.app__videos {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.invert {
+  filter: invert(1);
+}
+.app__logo {
+  display: flex;
+}
+
+.app__logo > img {
+  position: absolute;
+  object-fit: contain;
+  left: 10px;
+}
+.app__logo1 {
+  height: 85px;
+}
+.app__logo2 {
+  margin-top: 15px;
+  margin-left: 100px;
+  height: 50px;
+}

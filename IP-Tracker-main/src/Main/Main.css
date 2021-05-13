@@ -1,0 +1,32 @@
+main {
+  background-color: rgb(243, 234, 234);
+  flex: 1;
+}
+.main__yourip {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
+  padding: 50px;
+}
+.ip__info {
+  border: 1px solid red;
+  width: fit-content;
+  padding: 10px 20px;
+}
+.ip__infoBar {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.progressBar {
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .main__yourip {
+    width: 100vw;
+    padding: 20px 0;
+    margin-left: 8px;
+  }
+}

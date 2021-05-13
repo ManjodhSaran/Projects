@@ -1,0 +1,26 @@
+.videorow {
+  width: 70%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.videorow > img {
+  object-fit: contain;
+  width: 246px;
+  height: 138px;
+}
+
+.videorow-text {
+  margin-left: 40px;
+  font-size: 22px;
+}
+.videorow-text > p {
+  font-size: 16px;
+}
+.videorow-text > p > span {
+  background-color: lightgrey;
+  color: darkblue;
+  padding: 0px 3px;
+}
+.videorow-desc {
+  margin-top: 20px;
+}

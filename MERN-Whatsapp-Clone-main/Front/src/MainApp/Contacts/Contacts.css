@@ -1,0 +1,80 @@
+.contacts {
+  border-right: 0.5px solid rgb(167, 164, 164);
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+.contacts-search-main {
+  overflow-y: scroll;
+}
+.contacts-search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f6f6f6;
+  height: 39px;
+  border-bottom: 1px solid rgb(235, 233, 233);
+  position: sticky;
+  top: 0;
+}
+.contacts-search {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.contacts-search > input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin: 0 10px;
+}
+.contacts-search-icon {
+  padding: 5px;
+  color: rgb(133, 133, 133);
+}
+
+.contacts-search-results {
+  margin: 0 20px 20px;
+  max-width: 560px;
+  overflow-y: scroll;
+  background-color: rgb(223, 221, 221);
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.contacts-search-result {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgb(163, 157, 157);
+}
+.contacts-search-result:hover {
+  background-color: rgb(173, 172, 172);
+}
+.contacts-search-result > h3 {
+  margin-left: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bab3ae;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 197, 197);
+}

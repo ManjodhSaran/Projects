@@ -1,0 +1,15 @@
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(235, 233, 233);
+}
+.contact-header-avatar {
+}
+.contact-header-right {
+}
+
+.contact-header-icon {
+  color: grey;
+}

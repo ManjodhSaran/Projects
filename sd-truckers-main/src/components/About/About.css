@@ -1,0 +1,14 @@
+.about {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.about__div {
+  height: 50vh;
+  width: 30vw;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,57 @@
+<%- include('partials/header.ejs') -%>
+
+<main>
+  <h1 class="noselect">D3 CSE</h1>
+  <hr />
+  <%if(currentLecture){ %>
+
+  <div class="links">
+    <% if(currentLecture=== "elective"){ %>
+
+    <div class="elective">
+      <a href="<%= elective_1 %>" target="_blank">SFDS</a>
+      <a href="<%= elective_2 %>" target="_blank">IR</a>
+      <a href="<%= elective_3 %>" target="_blank">ACN</a>
+    </div>
+
+    <%}else{%>
+
+    <div class="non-elective">
+      <a href="<%= lectureLink %>" target="_blank"><%= currentLecture %></a>
+    </div>
+
+    <%}%> <% if(attendanceLink=== "inClass"){ %>
+
+    <a class="noHover" href="#">Attendance In Class</a>
+
+    <%}else{%>
+
+    <a href="<%= attendanceLink %>" target="_blank">Mark Attendance</a>
+
+    <%}%>
+  </div>
+
+  <%}else{%>
+
+  <div class="noClass">
+    <a class="noselect" href="#">NO CLASS</a>
+  </div>
+
+  <%}%>
+
+  <div class="time noselect">
+    <h3><%=day%> , <%=currentTime%> : <%=minutesIST%></h3>
+  </div>
+</main>
+
+<div class="report noselect">
+  <h3>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf_fHmQLiZz4gNAwhV3mZyA-IvpKTJSu7qDrqC7BVzNzbGpRg/viewform?usp=sf_link"
+      target="_blank"
+      >Report Issue</a
+    >
+  </h3>
+</div>
+
+<%- include('partials/footer.ejs') -%>

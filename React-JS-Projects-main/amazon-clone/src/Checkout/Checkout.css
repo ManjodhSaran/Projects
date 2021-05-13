@@ -1,0 +1,13 @@
+.checkout {
+  display: flex;
+}
+.checkout-products {
+  padding: 20px;
+  flex: 1;
+}
+.checkout-products > h2 {
+  font-weight: 800;
+}
+.checkout-subtotal {
+  margin: 20px;
+}

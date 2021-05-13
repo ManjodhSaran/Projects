@@ -1,0 +1,27 @@
+.chat-body {
+  flex: 1;
+  background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+  margin-bottom: 57px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+/* width */
+.chat-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.chat-body::-webkit-scrollbar-track {
+}
+
+/* Handle */
+.chat-body::-webkit-scrollbar-thumb {
+  background: #bab3ae;
+}
+
+/* Handle on hover */
+.chat-body::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 197, 197);
+}

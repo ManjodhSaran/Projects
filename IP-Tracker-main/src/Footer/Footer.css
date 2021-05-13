@@ -1,0 +1,10 @@
+footer {
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.footer__container {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+}

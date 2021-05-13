@@ -1,0 +1,103 @@
+import React from 'react'
+
+import './SearchPage.css'
+
+import { useStateValue } from '../../StateProvider'
+import useGoogleSearch from '../../useGoogleSearch';
+import { Link } from 'react-router-dom';
+
+import AppsIcon from '@material-ui/icons/Apps';
+import { Avatar } from '@material-ui/core';
+import Search from '../../components/Search/Search';
+
+import SearchIcon from '@material-ui/icons/Search';
+import DescriptionIcon from '@material-ui/icons/Description';
+import ImageIcon from '@material-ui/icons/Image';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
+import RoomIcon from '@material-ui/icons/Room';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+
+
+function SearchPage() {
+
+    const [{ term }] = useStateValue();
+    const { data } = useGoogleSearch(term);
+
+    return (
+        <div className="searchPage">
+            <div className="searchPage__header">
+                <Link to="/">
+                    <img className="searchPage__logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" />
+                </Link>
+                <div className="searchPage__headerMid">
+                    <Search hideButtons searchTerm={term} />
+                    <div className="searchPage__options">
+                        <div className="searchPage__optionsLeft">
+                            <div className="searchPage__option">
+                                <SearchIcon />
+                                <Link to="/all">All</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <DescriptionIcon />
+                                <Link to="/news">News</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <ImageIcon />
+                                <Link to="/image">Images</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <LocalOfferIcon />
+                                <Link to="/shopping">Shopping</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <RoomIcon />
+                                <Link to="/maps">maps</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <MoreVertIcon />
+                                <Link to="/more">more</Link>
+                            </div>
+                        </div>
+
+                        <div className="searchPage__optionsRight">
+                            <div className="searchPage__option">
+                                <Link to="/setting">Setting</Link>
+                            </div>
+                            <div className="searchPage__option">
+                                <Link to="/tools">Tools</Link>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="searchPage__headerRight">
+                    <AppsIcon />
+                    <Avatar />
+                </div>
+            </div>
+
+            {term && (
+                <div className="searchPage__results">
+
+                    <p>
+                        About {data?.searchInformation.formattedTotalResults}
+                        results ({data?.searchInformation.formattedSearchTime} seconds)
+                        for {term}
+                    </p>
+
+                    {data?.items.map(item => (
+                        <div className="searchPage__result">
+                            <a href={item.link}>{item.displayLink}</a>
+                            <a href={item.link}><h2>{item.title}</h2></a>
+                            <p>{item.snippet}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
+
+        </div>
+
+    )
+}
+
+export default SearchPage

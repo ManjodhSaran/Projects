@@ -1,0 +1,13 @@
+.sidebar {
+  flex: 0.2;
+  /* position: sticky;
+    background: #fff;
+    left: 0; */
+}
+
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgrey;
+  margin: 10px 0px;
+}

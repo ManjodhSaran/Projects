@@ -1,0 +1,60 @@
+.videofooter{
+    position: relative;
+    margin-left:20px;
+    bottom: 100px;
+}
+.videofooter-text{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    color :#fff;
+    margin-bottom: 20px;
+}
+.videofooter-text > h3 {
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.videofooter-text > h3 >button{
+    color: #fff;
+    font-weight: 900;
+    text-transform: inherit;
+}
+.videofooter_ticker > .ticker{
+    height: 60%;
+    height:fit-content;
+    margin-left:30px;
+    margin-bottom: 20px;
+}
+.videofooter_ticker h1 {
+    padding-top: 7px;
+    font-size: 12px;
+    color:#fff;
+}
+.videofooter-icon{
+    position: absolute;
+    left:5px;
+    color:#fff;
+}
+.videofooter-actions{
+    display: flex;
+    position: absolute;
+    width: 95%;
+    color:White;
+    justify-content: space-between;
+}
+.videofooter-actions-left > .MuiSvgIcon-root{
+    padding: 0 10px;
+}
+.videofooter-actions-right{
+    display: flex;
+}
+
+.videofooter-stat{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.videofooter-stat > p {
+    margin-left: 3px;
+} 

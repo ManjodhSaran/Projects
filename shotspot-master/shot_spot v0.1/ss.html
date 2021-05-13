@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shotspot</title>
+	<!--<meta http-equiv="refresh" content="1">-->
+	<link rel="stylesheet" type="text/css" href="ss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="addElement(1,25)">
+	<header>
+			<img src="img\logo.png"></a>
+			<h1 class="changecolor">SHOT SPOT</h1></a>
+			<ul class="bar-menu animated bounceInDown"id="bar-list">
+				<li><a href="#" id="navlatest" onclick="slatest()">LATEST</a></li>
+				<li><a href="#" id="navbollywood" onclick="sbollywood()">BOLLYWOOD</a></li>
+				<li><a href="#" id="navhollywood" onclick="shollywood()">HOLLYWOOD</a></li>
+				<li><a href="#" id="navprime" onclick="sprime()">OTHERS</a></li>
+				<li><a class="downloader" href="https://drive.google.com/open?id=1kv1h0libhZkI10caYH4feLOnpP48RjDE">IDM</a></li>
+				<!--<li><a href="#" onclick="darkmode()"><i class="fas fa-adjust"></i>DARK MODE</a></li>-->
+			</ul>
+			<a href="#" class="bar-icon" onclick="showbar()"><i class="fa fa-bars"></i></a>
+			<!--<div class="alert">
+  				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  				This is an alert box.
+			</div>-->
+	</header>
+	<main>
+		<div id="latest">
+		<div class="movies">
+			<p>Updated:25-March</p><h1>LATEST</h1><br>
+			<div class="series" id="series1" onmouseover="showall(1)" onmouseout="hideall(1)"><img id="img1" src="https://hdmovieshub.cc/wp-content/uploads/2020/03/dare-me-season-1-in-hindi.jpg">
+				<div class="sd" id="sd1">
+					<h3>DARE ME Season 1 (Hindi)</h3>
+					<ul class="listep">
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E01.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=f739e9d9-7683-4bca-9faf-cc1a00d36bab"class="direct">Episode 01</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E02.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=0b519c5a-1265-44a9-b3f2-18b80cbb68da"class="direct">Episode 02</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E03.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=b30a686f-718e-4d95-b966-e6dbeef36f00"class="direct">Episode 03</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E04.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=2196a03b-4bdc-4a97-b882-d903aee752c1"class="direct">Episode 04</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E05.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=d986a898-e34d-48fa-a34c-488d58ec6ca1"class="direct">Episode 05</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E06.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=5103eead-42de-48f5-97ac-2b5f8bf24b09"class="direct">Episode 06</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E07.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=96f2b73e-9b7f-4c3b-888f-982771e1221f"class="direct">Episode 07</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E08.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=731c3334-6dd4-4d0d-9def-a5f24b3a0c82"class="direct">Episode 08</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E09.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=490df5a6-4d80-4870-8866-f831330a2ed6"class="direct">Episode 09</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FDare%20Me%20%E2%80%93%20Season%201%20hindi%2FDare.Me.S01E10.720p.WEB-DL.Hindi-Eng.x264-HDmovieshub.cc.mkv?alt=media&token=d8e3fe3b-697e-4f8f-926a-2e7c0cbeb837"class="direct">Episode 10</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="series" id="series2" onmouseover="showall(2)" onmouseout="hideall(2)">
+				<img id="img2" src="https://extraimage.net/images/2020/03/20/bfc810b4f18d0403f9e27315f06a471b.jpg">
+				<div class="sd" id="sd2">
+					<h3 >SHE Season 1</h3>
+				<ul class="listep">
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E01.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=8bcdfc86-b523-4c4f-8a71-117bd61329af"class="direct">Episode 01</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E02.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=3204bf45-5a5b-407f-bd6e-6ca425db77ec"class="direct">Episode 02</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E03.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=1af8626a-44f1-4479-85c4-82fd4aa79f79"class="direct">Episode 03</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E04.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=d1149289-dc46-430a-acf7-d0626f5b6853"class="direct">Episode 04</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E05.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=17545bc0-9e18-4e75-9b3f-0d90120bf711"class="direct">Episode 05</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E06.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=61e118ef-20de-4d88-9016-e5271c812273"class="direct">Episode 06</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E07.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=8c4ca685-03c0-40d5-8562-1eab3815ed27"class="direct">Episode 07</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(25)" onmouseout="hidefull(25)">
+				<img id="image25" src="https://www.pinkvilla.com/files/panga-new-poster-kangana-ranaut-jassie-gill-neena-gupta-paint-a-happy-picture-as-a-family-check-it-out.jpg">
+				<div class="md" id="md25">
+					<h3>PANGA</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FPanga%20m%2FHDMoviesHub.cc%20-%20Pamga%201080p%201.6GB.mkv?alt=media&token=dc1ef601-18a3-4108-807c-f6fbb80365c3"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(24)" onmouseout="hidefull(24)">
+				<img id="image24" src="https://m.media-amazon.com/images/M/MV5BNDM4YTAwODMtY2UwYi00NmRjLTg4OGItYTliNWI2ZGYyNGZmXkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_SY1000_SX1000_AL_.jpg">
+				<div class="md" id="md24">
+					<h3>STREET DANCER 3D</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FStreet%20Dancer%203D%20%2FHDMovieshub.cc%20-%20Street%20Dancer%203D%201080p%202.5GB.mkv?alt=media&token=108dc47b-3d5e-4a51-afbb-3199a5500d06"class="direct">Download</a>
+				</div>
+			</div>	
+			<div class="series" id="series1" onmouseover="showall(3)" onmouseout="hideall(3)">
+				<img id="img3" src="https://www.webfare.live/wp-content/uploads/2020/03/Special-ops-New-size-500-X-700.jpg">
+				<div class="sd" id="sd3" >
+					<h3>SPECIAL OPS</h3>
+				<ul class="listep">
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20_-_S01E01.mkv?alt=media&token=b5eaa32e-b8c7-4c1a-8697-b331734040c4"class="direct">Episode 01</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20_-_S01E02.mkv?alt=media&token=0ee42762-5e11-4d10-a0d8-c8ee50369b07"class="direct">Episode 02</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20%20-%20S01E03.mkv?alt=media&token=62bd3475-5235-46f9-b262-9d5259e2c799"class="direct">Episode 03</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20%20-%20S01E04.mkv?alt=media&token=296485b4-70b8-4020-8565-2c4f3a7b6e57"class="direct">Episode 04</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E05.mkv?alt=media&token=631ccde6-465d-4eff-8002-606d6fed3cbc"class="direct">Episode 05</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E06.mkv?alt=media&token=e8766995-1a8b-4723-8f2d-063b9d2a7962"class="direct">Episode 06</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E07.mkv?alt=media&token=9bb09b3b-d080-4e65-a8e6-a96c7c6f08ee"class="direct">Episode 07</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E08.mkv?alt=media&token=f6912230-1d8d-4c07-926a-9feb1cdc5091"class="direct">Episode 08</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="movie" id="movie23" onmouseover="showfull(23)" onmouseout="hidefull(23)">
+				<img id="image23" src="https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/222874/angrezimedium-posterart.jpg">
+				<div class="md" id="md23">
+					<h3>ANGREZI MEDIUM</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FAngrezi%20Medium%2FHDmovieshub.cc%20-%20Angrezi%20Medium%20(2020)%20Hindi%20720p%20PreDVD%20Rip%20x264%20AAC%201.2GB%20HDMovieshub%20Exclusive.mkv?alt=media&token=bc651172-076f-426e-bd89-ed5959863ae9"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie22" onmouseover="showfull(22)" onmouseout="hidefull(22)">
+				<img id="image22" src="https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg">
+				<div class="md" id="md22">
+					<h3>GLASS</h3>					
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FGlass%2FGlass.2019.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2c3401ba-777b-4e4c-8d35-7638ca3fd31d"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie21" onmouseover="showfull(21)" onmouseout="hidefull(21)">
+				<img id="image21" src="https://m.media-amazon.com/images/M/MV5BODBlNTdmMjMtYzgyMS00ZDllLWI3ZWMtMDI4YzhjN2E2YTRjXkEyXkFqcGdeQXVyMzc5NDU5NzY@._V1_.jpg">
+				<div class="md" id="md21">
+					<h3>GO!</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FGo%20Karts%2FGo.Karts.2020.720p.WEB-DL.Hindi.Dual-Audio.x264-HDmoviesHUB.cc.mkv?alt=media&token=7e449ec8-807a-4600-b5a4-2ff3422c5bb2"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie20" onmouseover="showfull(20)" onmouseout="hidefull(20)">
+				<img id="image20" src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/Blockers_PosterArt.jpg?itok=88Rq8Aw1">
+				<div class="md" id="md20">
+					<h3>BLOCKERS</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FBlockers%20%2FBlockers.2018.720p.BluRay.Hindi-English.x264.6CH-HDMovieshub.cc.mkv?alt=media&token=90e91544-e2ed-46c7-82c8-0b1dacf9376b"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie19" onmouseover="showfull(19)" onmouseout="hidefull(19)">
+				<img id="image19" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA83qOgEitPGpKLOmwr0XTT8q-0OfTNTa6HgXrxgvvmnblRhBj">
+				<div class="md" id="md19">
+					<h3>THE GRUDGE</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2F1917%20movie%2FThe.Grudge.2020.720p.HDRip.Hindi.Dub.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2b75322a-dc5e-4946-8641-0ddecabcc139"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie18" onmouseover="showfull(18)" onmouseout="hidefull(18)">
+				<img id="image18" src="https://i2.wp.com/refilledge.com/wp-content/uploads/2020/03/download-wolf-.jpg?fit=1753%2C2550&ssl=1"></a>
+				<div class="md" id="md18">
+					<h3>WOLF</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FWolf%20%2FHDmovieshub.cc%20-%20Wolf%20(2020)%20Dual%20Audio%201080p%201.6GB.mkv?alt=media&token=df1e3b61-86c4-469a-812a-acd2b0e48731"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie17" onmouseover="showfull(17)" onmouseout="hidefull(17)">
+				<img id="image17" src="https://upload.wikimedia.org/wikipedia/en/4/45/Bloodshot_-_official_film_poster.jpeg">
+				<div class="md" id="md17">
+					<h3>BLOODSHOT</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGulity%20and%20I%2FBloodshot.2020.720p.HDCam.English.HDMovieshub.cc.mkv?alt=media&token=bb35c0de-6c25-403a-afe4-878649fb44ba"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie16" onmouseover="showfull(16)" onmouseout="hidefull(16)">
+				<img id="image16" src="https://m.media-amazon.com/images/M/MV5BNDgwMTRlOTUtMzdkOC00MTVhLThiNTMtMDEyM2JlN2E4NTllXkEyXkFqcGdeQXVyNDA4OTExNDU@._V1_.jpg">
+				<div class="md" id="md16">
+					<h3>TEKKEN 2</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FTekken%201-2%2FTekken.Kazuyas.Revenge.2014.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2cf5ca15-62b8-454e-8381-4ef94a935dc5"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie15" onmouseover="showfull(15)" onmouseout="hidefull(15)">
+				<img id="image15" src="https://m.media-amazon.com/images/M/MV5BMjE1ODM3MTI5MF5BMl5BanBnXkFtZTcwNjc3MDcxNQ@@._V1_.jpg">
+				<div class="md" id="md15">
+					<h3>TEKKEN 1</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FTekken%201-2%2FTekken.2010.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=328ea9c5-5cf8-46f3-afb7-b32ea2810aa5"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie14" onmouseover="showfull(14)" onmouseout="hidefull(14)">
+				<img id="image14" src="https://www.webfare.live/wp-content/uploads/2020/03/Asur-New-size-500-X-700-225x305.jpg">
+				<div class="md" id="md14">
+					<h3>ASUR Season 1</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Asur%20(2020)%20Hindi%20S01%20Complete%201.4GB.mkv?alt=media&token=9c1d5d06-6774-47c4-8b68-e0140392f62a"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie13" onmouseover="showfull(13)" onmouseout="hidefull(13)">
+				<img id="image13" src="https://m.media-amazon.com/images/M/MV5BNzMzYWYwMjAtODJmYS00OWRiLThmMDktYjQ4ODQ5MGQzZjJmXkEyXkFqcGdeQXVyODI2MzM0MTM@._V1_.jpg"></a>
+				<div class="md" id="md13">
+					<h3>MENTALHOOD Season 1</h3></a>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Mentalhood%20(2020)%20Hindi%20S01%20Complete%20HDRip%20WEB-DL%20x264%20AAC.mkv?alt=media&token=e639ccf9-29b7-4360-b0df-c6c8b2962ef9"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie12" onmouseover="showfull(12)" onmouseout="hidefull(12)">
+				<img id="image12" src="https://www.thedigitalhash.com/wp-content/uploads/2020/03/Bhaukaal_MX_Player_English-min-1.jpg">
+				<div class="md" id="md12">
+					<h3>BHUAKAAL Season 1</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Bhaukaal%20(2020)%20MX%20Original%20720p%20x264%20AAC.mkv?alt=media&token=cdef8e8e-1a63-4265-bb85-8e1ecf8428ae"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie11" onmouseover="showfull(11)" onmouseout="hidefull(11)">
+				<img id="image11" src="https://media-cache.cinematerial.com/p/500x/hfildmr5/guilty-imdb-indian-movie-poster.jpg?v=1582558252">
+				<div class="md" id="md11">
+					<h3>GUILTY</h3></a>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGulity%20and%20I%2FHDmovieshub.cc%20-%20Guilty%20(2020)%20Dual%20Hin-%20Eng%201.2GB.mkv?alt=media&token=6543bf77-770a-4351-a5df-a7f6e70f2b2f"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie10" onmouseover="showfull(10)" onmouseout="hidefull(10)">
+				<img id="image10" src="https://imgurworld.com/images/2020/03/10/0979365b50aba5accf51d7c666f3885f.jpg">
+				<div class="md" id="md10">
+					<h3>OPERATION PARINDEY</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Operation%20Parindey%20(2020)%20Zee5%20WEB-DL%2010880p%20x264%20AAC.mkv?alt=media&token=8a3e35b8-4475-45fd-83b9-f331b34eea69"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie9" onmouseover="showfull(9)" onmouseout="hidefull(9)">
+				<img id="image9" src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/sir-is-love-enough-sir-et00128936-11-03-2020-12-38-56.jpg">
+				<div class="md" id="md9">
+					<h3>IS LOVE ENOUGH SIR</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Is%20Love%20Enough%20Sir%20(2020)%20Hindi%20900MB%20WEB-DL%20x264%20AAC.mkv?alt=media&token=666f5f6f-0066-461b-82a4-b3cc26d1e4ac"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie8" onmouseover="showfull(8)" onmouseout="hidefull(8)">
+				<img id="image8" src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2020/03/05/Baaghi1-1583400738.jpg?itok=0MJHzKTr">
+				<div class="md" id="md8">
+					<h3>BAAGHI 3</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBaaghi%20%2FHDMovieshub.cc%20-%20Baaghi%203%20(2020)%20Hindi%20720p%20PreDVD%20Rip%20x264%20AAC%201.2GB%20CineVood%20Exclusive.mkv?alt=media&token=bb875099-008f-4dfe-adc1-1ebf83bb252c"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie7" onmouseover="showfull(7)" onmouseout="hidefull(7)">
+				<img id="image7" src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/ik-sandhu-hunda-si-et00108910-05-08-2019-03-38-05.jpg">
+				<div class="md" id="md7">
+					<h3>IK SANDHU HUNDA SI</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FIk%20Sandhu%20Hunda%20Si%20punjabi%20movie%2FHDMovieshub.cc%20-Ik%20Sandhu%20Hunda%20Si%20(2020)%20Punjabi%20PreDVD%20Rip%20x264%20AAC%20400MB%20No%20LOGO%20HDmovieshub.cc%20Exclusive.mkv?alt=media&token=45ccfd52-521f-43ff-8d78-351ca4fe832a"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie6" onmouseover="showfull(6)" onmouseout="hidefull(6)">
+				<img id="image6" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Thappad_film_poster.jpg/220px-Thappad_film_poster.jpg">
+				<div class="md" id="md6">
+					<h3>THAPPAD</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appsp.t.com/o/bolle%2FThappad%20%2FHDmovieshub.cc%20-%20Thappad%20(2020)%20Hindi%20720p%20PreDVD%20x264%20AAC%201.2GB%20HDmovieshub%20Exclusive.mkv?alt=media&token=7678531f-02f1-4815-b7f4-d10de36a6325"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie5" onmouseover="showfull(5)" onmouseout="hidefull(5)">
+				<img id="image5" src="https://cinema.mu/wp-content/uploads/2019/12/chhapaak-poster-500x740.jpg">
+				<div class="md" id="md5">
+					<h3>CHHAPAAK</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FChappak%20And%20Tanaji%2FHDMovieshub.cc%20-%20Chapaak%20(2020)%20720p%201.4GB.mkv?alt=media&token=a15857e6-8da1-4868-a0e9-ffbf941f484a"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie4" onmouseover="showfull(4)" onmouseout="hidefull(4)">
+				<img id="image4" src="https://www.asianimage.co.uk/resources/images/10785019.png?display=1&htype=328&type=responsive-gallery">
+				<div class="md" id="md4">
+					<h3>TANAJI</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FChappak%20And%20Tanaji%2FHDMovieshub.cc%20-%20Tanhaji.2020.1080p.HS.WEB-DL.AAC.2.0.x264.mkv?alt=media&token=8aa36945-e30a-402d-9df9-86b17e43447f"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie3" onmouseover="showfull(3)" onmouseout="hidefull(3)">
+				<img id="image3" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/01/Subh-Mangal-Zyada-Saavdhan.jpg">
+				<div class="md" id="md3">
+					<h3>Shubh Mangal Zyada Saavdhan</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FShubh%20Mangal%20Zyada%20Saavdhan%2FHDMovieshub.club%20-%20Shubh%20Mangal%20Zyada%20Saavdhan%20(2020)%20Hindi%20720p%20HQ%20PreDVD%20x264%20AAC%202.7GB%20HDMovieshub.club.mkv?alt=media&token=09fcfe4f-f2c1-4674-b94c-71584d7ecda8"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie2" onmouseover="showfull(2)" onmouseout="hidefull(2)">
+				<img id="image2" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/01/Bhoot-.jpg">
+				<div class="md" id="md2" >
+					<h3>BHOOT</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhoot%20Part%20One%20%E2%80%93%20The%20Haunted%20Ship%20%2FHDMovieshub.club%20-%20Bhoot%20(2020)%20Hindi%20720p%20HQ%20PreDVD%20x264%20AAC%202.5GB%20HDMovieshub.club.mkv?alt=media&token=e783a6bd-b6cb-478f-917b-0d146c07f6a0"class="direct">Download</a>
+				</div>
+			</div>
+			<div class="movie" id="movie1" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Good_Newwz_film_poster.jpg/220px-Good_Newwz_film_poster.jpg">
+				<div class="md" id="md1">
+					<h3>GOOD NEWS</h3>
+					<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGood%20Newz%2FHDMovieshub.club%20Good%20Newwz%201080p%20WEBRip.mkv?alt=media&token=6e117a2f-5c68-4364-bb51-ab3b319079da"class="direct">Download</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="bollywood">
+		<div class="movies">
+			<h1>BOLLYWOOD MOVIES</h1>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.pinkvilla.com/files/panga-new-poster-kangana-ranaut-jassie-gill-neena-gupta-paint-a-happy-picture-as-a-family-check-it-out.jpg"></a>
+				<h3>PANGA</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FPanga%20m%2FHDMoviesHub.cc%20-%20Pamga%201080p%201.6GB.mkv?alt=media&token=dc1ef601-18a3-4108-807c-f6fbb80365c3"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://m.media-amazon.com/images/M/MV5BNDM4YTAwODMtY2UwYi00NmRjLTg4OGItYTliNWI2ZGYyNGZmXkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_SY1000_SX1000_AL_.jpg"></a>
+				<h3>STREET DANCER 3D</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FStreet%20Dancer%203D%20%2FHDMovieshub.cc%20-%20Street%20Dancer%203D%201080p%202.5GB.mkv?alt=media&token=108dc47b-3d5e-4a51-afbb-3199a5500d06"class="direct">Download</a>
+			</div>	
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/222874/angrezimedium-posterart.jpg"></a>
+				<h3>ANGREZI MEDIUM</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FAngrezi%20Medium%2FHDmovieshub.cc%20-%20Angrezi%20Medium%20(2020)%20Hindi%20720p%20PreDVD%20Rip%20x264%20AAC%201.2GB%20HDMovieshub%20Exclusive.mkv?alt=media&token=bc651172-076f-426e-bd89-ed5959863ae9"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://imgurworld.com/images/2020/03/10/0979365b50aba5accf51d7c666f3885f.jpg"></a>
+				<h3>OPERATION PARINDEY</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Operation%20Parindey%20(2020)%20Zee5%20WEB-DL%2010880p%20x264%20AAC.mkv?alt=media&token=8a3e35b8-4475-45fd-83b9-f331b34eea69"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/sir-is-love-enough-sir-et00128936-11-03-2020-12-38-56.jpg"></a>
+				<h3>IS LOVE ENOUGH SIR</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Is%20Love%20Enough%20Sir%20(2020)%20Hindi%20900MB%20WEB-DL%20x264%20AAC.mkv?alt=media&token=666f5f6f-0066-461b-82a4-b3cc26d1e4ac"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/article_images/2020/03/05/Baaghi1-1583400738.jpg?itok=0MJHzKTr"></a>
+				<h3>BAAGHI 3</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBaaghi%20%2FHDMovieshub.cc%20-%20Baaghi%203%20(2020)%20Hindi%20720p%20PreDVD%20Rip%20x264%20AAC%201.2GB%20CineVood%20Exclusive.mkv?alt=media&token=bb875099-008f-4dfe-adc1-1ebf83bb252c"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://media-cache.cinematerial.com/p/500x/hfildmr5/guilty-imdb-indian-movie-poster.jpg?v=1582558252"></a>
+				<h3>GUILTY</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGulity%20and%20I%2FHDmovieshub.cc%20-%20Guilty%20(2020)%20Dual%20Hin-%20Eng%201.2GB.mkv?alt=media&token=6543bf77-770a-4351-a5df-a7f6e70f2b2f"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/large/ik-sandhu-hunda-si-et00108910-05-08-2019-03-38-05.jpg"></a>
+				<h3>IK SANDHU HUNDA SI</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FIk%20Sandhu%20Hunda%20Si%20punjabi%20movie%2FHDMovieshub.cc%20-Ik%20Sandhu%20Hunda%20Si%20(2020)%20Punjabi%20PreDVD%20Rip%20x264%20AAC%20400MB%20No%20LOGO%20HDmovieshub.cc%20Exclusive.mkv?alt=media&token=45ccfd52-521f-43ff-8d78-351ca4fe832a"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Thappad_film_poster.jpg/220px-Thappad_film_poster.jpg"></a>
+				<h3>THAPPAD</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FThappad%20%2FHDmovieshub.cc%20-%20Thappad%20(2020)%20Hindi%20720p%20PreDVD%20x264%20AAC%201.2GB%20HDmovieshub%20Exclusive.mkv?alt=media&token=7678531f-02f1-4815-b7f4-d10de36a6325
+"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://cinema.mu/wp-content/uploads/2019/12/chhapaak-poster-500x740.jpg"></a>
+				<h3>CHHAPAAK</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FChappak%20And%20Tanaji%2FHDMovieshub.cc%20-%20Chapaak%20(2020)%20720p%201.4GB.mkv?alt=media&token=a15857e6-8da1-4868-a0e9-ffbf941f484a"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.asianimage.co.uk/resources/images/10785019.png?display=1&htype=328&type=responsive-gallery"></a>
+				<h3>TANAJI</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FChappak%20And%20Tanaji%2FHDMovieshub.cc%20-%20Tanhaji.2020.1080p.HS.WEB-DL.AAC.2.0.x264.mkv?alt=media&token=8aa36945-e30a-402d-9df9-86b17e43447f"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/01/Subh-Mangal-Zyada-Saavdhan.jpg"></a>
+				<h3>SHUBH MANGAL JHADA SAVDHAN</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FShubh%20Mangal%20Zyada%20Saavdhan%2FHDMovieshub.club%20-%20Shubh%20Mangal%20Zyada%20Saavdhan%20(2020)%20Hindi%20720p%20HQ%20PreDVD%20x264%20AAC%202.7GB%20HDMovieshub.club.mkv?alt=media&token=09fcfe4f-f2c1-4674-b94c-71584d7ecda8"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://st1.bollywoodlife.com/wp-content/uploads/2020/01/Bhoot-.jpg"></a>
+				<h3>BHOOT</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhoot%20Part%20One%20%E2%80%93%20The%20Haunted%20Ship%20%2FHDMovieshub.club%20-%20Bhoot%20(2020)%20Hindi%20720p%20HQ%20PreDVD%20x264%20AAC%202.5GB%20HDMovieshub.club.mkv?alt=media&token=e783a6bd-b6cb-478f-917b-0d146c07f6a0"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Good_Newwz_film_poster.jpg/220px-Good_Newwz_film_poster.jpg"></a>
+				<h3>GOOD NEWS</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGood%20Newz%2FHDMovieshub.club%20Good%20Newwz%201080p%20WEBRip.mkv?alt=media&token=6e117a2f-5c68-4364-bb51-ab3b319079da"class="direct">Download</a>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div id="hollywood">
+		<div class="movies">
+			<h1>HOLLYWOOD MOVIES</h1>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg"></a>
+				<h3>GLASS</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FGlass%2FGlass.2019.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2c3401ba-777b-4e4c-8d35-7638ca3fd31d"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://m.media-amazon.com/images/M/MV5BODBlNTdmMjMtYzgyMS00ZDllLWI3ZWMtMDI4YzhjN2E2YTRjXkEyXkFqcGdeQXVyMzc5NDU5NzY@._V1_.jpg"></a>
+				<h3>GO!</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FGo%20Karts%2FGo.Karts.2020.720p.WEB-DL.Hindi.Dual-Audio.x264-HDmoviesHUB.cc.mkv?alt=media&token=7e449ec8-807a-4600-b5a4-2ff3422c5bb2"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/Blockers_PosterArt.jpg?itok=88Rq8Aw1"></a>
+				<h3>BLOCKERS</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FBlockers%20%2FBlockers.2018.720p.BluRay.Hindi-English.x264.6CH-HDMovieshub.cc.mkv?alt=media&token=90e91544-e2ed-46c7-82c8-0b1dacf9376b"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA83qOgEitPGpKLOmwr0XTT8q-0OfTNTa6HgXrxgvvmnblRhBj"></a>
+				<h3>THE GRUDGE</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2F1917%20movie%2FThe.Grudge.2020.720p.HDRip.Hindi.Dub.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2b75322a-dc5e-4946-8641-0ddecabcc139"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://i2.wp.com/refilledge.com/wp-content/uploads/2020/03/download-wolf-.jpg?fit=1753%2C2550&ssl=1"></a>
+				<h3>WOLF</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FWolf%20%2FHDmovieshub.cc%20-%20Wolf%20(2020)%20Dual%20Audio%201080p%201.6GB.mkv?alt=media&token=df1e3b61-86c4-469a-812a-acd2b0e48731"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://upload.wikimedia.org/wikipedia/en/4/45/Bloodshot_-_official_film_poster.jpeg"></a>
+				<h3>BLOODSHOT</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FGulity%20and%20I%2FBloodshot.2020.720p.HDCam.English.HDMovieshub.cc.mkv?alt=media&token=bb35c0de-6c25-403a-afe4-878649fb44ba"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://m.media-amazon.com/images/M/MV5BNDgwMTRlOTUtMzdkOC00MTVhLThiNTMtMDEyM2JlN2E4NTllXkEyXkFqcGdeQXVyNDA4OTExNDU@._V1_.jpg"></a>
+				<h3>TEKKEN 2</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FTekken%201-2%2FTekken.Kazuyas.Revenge.2014.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=2cf5ca15-62b8-454e-8381-4ef94a935dc5"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://m.media-amazon.com/images/M/MV5BMjE1ODM3MTI5MF5BMl5BanBnXkFtZTcwNjc3MDcxNQ@@._V1_.jpg"></a>
+				<h3>TEKKEN 1</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FTekken%201-2%2FTekken.2010.720p.BluRay.Hindi.Dual-Audio.x264-HDMovieshub.cc.mkv?alt=media&token=328ea9c5-5cf8-46f3-afb7-b32ea2810aa5"class="direct">Download</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="netflix">
+		<div class="movies">
+			<h1>NETFLIX</h1>
+			
+		</div>
+	</div>
+	
+	<div id="prime">
+		<div class="movies">
+			<h1>OTHER</h1>
+			<div class="series" id="series1">
+				<img src="https://extraimage.net/images/2020/03/20/bfc810b4f18d0403f9e27315f06a471b.jpg"></a>
+				<h3>SHE Season 1</h3></a>
+				<ul class="listep" id="listep1">
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E01.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=8bcdfc86-b523-4c4f-8a71-117bd61329af"class="direct">Episode 01</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E02.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=3204bf45-5a5b-407f-bd6e-6ca425db77ec"class="direct">Episode 02</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E03.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=1af8626a-44f1-4479-85c4-82fd4aa79f79"class="direct">Episode 03</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E04.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=d1149289-dc46-430a-acf7-d0626f5b6853"class="direct">Episode 04</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E05.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=17545bc0-9e18-4e75-9b3f-0d90120bf711"class="direct">Episode 05</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E06.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=61e118ef-20de-4d88-9016-e5271c812273"class="direct">Episode 06</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/verdant-doodad-250906.appspot.com/o/Bharat%20-%20Update%20%5BNo%2018%2B%20Here%5D%2FShe%20S01%20Netflix%2FShe.S01E07.720p.WEB-DL.Hindi.x264-HDMovieshub.cc.mkv?alt=media&token=8c4ca685-03c0-40d5-8562-1eab3815ed27"class="direct">Episode 07</a></li>
+				</ul>
+			</div>
+			<div class="series" id="series1">
+				<img src="https://www.webfare.live/wp-content/uploads/2020/03/Special-ops-New-size-500-X-700.jpg"></a>
+				<h3>SPECIAL OPS</h3></a>
+				<!--<a href="#"class="direct" onclick="showlistep()">Download</a>-->
+				<ul class="listep" id="listep1">
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20_-_S01E01.mkv?alt=media&token=b5eaa32e-b8c7-4c1a-8697-b331734040c4"class="direct">Episode 01</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20_-_S01E02.mkv?alt=media&token=0ee42762-5e11-4d10-a0d8-c8ee50369b07"class="direct">Episode 02</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMoviesHub.cc%20%20-%20S01E03.mkv?alt=media&token=62bd3475-5235-46f9-b262-9d5259e2c799"class="direct">Episode 03</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20%20-%20S01E04.mkv?alt=media&token=296485b4-70b8-4020-8565-2c4f3a7b6e57"class="direct">Episode 04</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E05.mkv?alt=media&token=631ccde6-465d-4eff-8002-606d6fed3cbc"class="direct">Episode 05</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E06.mkv?alt=media&token=e8766995-1a8b-4723-8f2d-063b9d2a7962"class="direct">Episode 06</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E07.mkv?alt=media&token=9bb09b3b-d080-4e65-a8e6-a96c7c6f08ee"class="direct">Episode 07</a></li>
+					<li><a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FSpecial%20OPS%2FHDMovieshub.cc%20-%20S01E08.mkv?alt=media&token=f6912230-1d8d-4c07-926a-9feb1cdc5091"class="direct">Episode 08</a></li>
+				</ul>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.webfare.live/wp-content/uploads/2020/03/Asur-New-size-500-X-700-225x305.jpg"></a>
+				<h3>ASUR Season 1</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Asur%20(2020)%20Hindi%20S01%20Complete%201.4GB.mkv?alt=media&token=9c1d5d06-6774-47c4-8b68-e0140392f62a"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://m.media-amazon.com/images/M/MV5BNzMzYWYwMjAtODJmYS00OWRiLThmMDktYjQ4ODQ5MGQzZjJmXkEyXkFqcGdeQXVyODI2MzM0MTM@._V1_.jpg"></a>
+				<h3>MENTALHOOD Season 1</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Mentalhood%20(2020)%20Hindi%20S01%20Complete%20HDRip%20WEB-DL%20x264%20AAC.mkv?alt=media&token=e639ccf9-29b7-4360-b0df-c6c8b2962ef9"class="direct">Download</a>
+			</div>
+			<div class="movie" id="movie" onmouseover="showfull(1)" onmouseout="hidefull(1)">
+				<img id="image1" src="https://www.thedigitalhash.com/wp-content/uploads/2020/03/Bhaukaal_MX_Player_English-min-1.jpg"></a>
+				<h3>BHUAKAAL Season 1</h3></a>
+				<a href="https://firebasestorage.googleapis.com/v0/b/light-lacing-247408.appspot.com/o/bolle%2FBhaukaal%20and%20Asur%2FHDMoviesHub.cc%20-%20Bhaukaal%20(2020)%20MX%20Original%20720p%20x264%20AAC.mkv?alt=media&token=cdef8e8e-1a63-4265-bb85-8e1ecf8428ae"class="direct">Download</a>
+			</div>
+		</div>
+	</div>
+	</main>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer>
+		<div class="footer1">
+			<h1>About Us</h1>
+			<h3>EMAIL:shotspot39@gmail.com</h3>
+			<h4>JUST FOR ENTERTAINMENT PURPOSE</h4>
+		</div>
+		<div class="footer2">
+		</div>
+	</footer>
+	<script src="ss.js"></script>
+</body>
+</html>
+<!--
+	<div class="series" id="series1">
+		<img src=""></a>
+		<h3></h3></a>
+		<ul class="listep" id="listep1">
+			<li><a href="#"class="direct">Episode 01</a></li>
+			<li><a href="#"class="direct">Episode 02</a></li>
+			<li><a href="#"class="direct">Episode 03</a></li>
+			<li><a href="#"class="direct">Episode 04</a></li>
+			<li><a href="#"class="direct">Episode 05</a></li>
+			<li><a href="#"class="direct">Episode 06</a></li>
+			<li><a href="#"class="direct">Episode 07</a></li>
+			<li><a href="#"class="direct">Episode 08</a></li>
+			<li><a href="#"class="direct">Episode 09</a></li>
+			<li><a href="#"class="direct">Episode 10</a></li>
+		</ul>
+	</div>
+-->

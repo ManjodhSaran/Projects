@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(169, 167, 167);
+  align-content: center;
+}
+
+main {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(103, 101, 101);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  box-shadow: 5px 5px #565555;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 7px;
+  font-family: "Archivo Black", sans-serif;
+  background: -webkit-linear-gradient(#f46157, #f99e3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+}
+
+.links,
+.elective,
+.non-elective {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 5px 0;
+  margin: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.noClass {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+}
+.noClass a {
+  letter-spacing: 5px;
+  font-size: 30px;
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+}
+
+.report {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+}
+.report a {
+  text-decoration: none;
+  color: rgb(225, 41, 41);
+  padding: 10px 5px;
+  background: rgb(84, 83, 83);
+}
+.report a:hover {
+  text-decoration: underline;
+}
+.noHover:hover {
+  text-decoration: none;
+  color: #000;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.time {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  font-family: "Cedarville Cursive", cursive;
+}
+.time h3 {
+  text-align: center;
+  color: rgb(74, 74, 74);
+  font-size: 25px;
+}
+@media only screen and (max-width: 540px) {
+  main {
+    width: 100%;
+    min-height: 100%;
+    box-shadow: 0px 5px #565555;
+    position: relative;
+  }
+  .noClass {
+    left: 25%;
+  }
+  .report {
+    bottom: 2%;
+    right: 2%;
+  }
+}

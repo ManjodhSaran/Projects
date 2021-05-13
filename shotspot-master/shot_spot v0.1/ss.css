@@ -1,0 +1,364 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhLjOYJEdADAXFgCXTmuXcLiqYew3KBpSnhirJdPCxWtBri6Rj);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+header{
+	height: 75px;
+}
+header img{
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 55px;
+	height: auto;
+	float: left;
+	text-shadow: 1px 2px #4A4141;
+	filter: grayscale(30%);
+}
+header h1{
+	font-size: 60px; 
+	font-weight: bolder;
+	float: left;
+	margin-left: 30px;
+	line-height: 75px;
+	text-shadow: 1px 2px hotpink;
+}
+.changecolor{
+	animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+ 	0%{color:black ;}
+ 	25%{color:red ;}
+ 	50%{color:white ;}
+ 	75%{color:blue ;}
+ 	100%{color:green ;}
+}
+
+header ul{
+	list-style: none;
+	float: right;
+}
+header ul li{
+	display: inline-block;
+	font-size: 25px;
+	margin: 15px;
+	line-height: 75px;
+}
+header ul li a{
+	text-decoration: none;
+	color: white;
+	padding-bottom: 5px; 
+}
+header ul li a:hover{
+	border-bottom: 1px solid #FFFFFF;
+}
+.bar-icon{
+	float: right;
+	position: absolute;
+}
+.movies{
+	padding-top: 10px;
+	width: 99%;
+	margin: auto;
+}
+.movies p{
+	text-align: center;
+	background: lightgrey;
+	float: left;
+	padding-bottom: 23px;	
+}
+.movies h1{
+	text-align: center;
+	background: lightgrey;
+	color: hotpink;		
+}
+.md{display: none;}
+.movie{
+	width: 240px;
+	height: 300px;
+	float: left;
+	margin: 25px 25px 25px 25px;
+}
+.movie a{
+	text-decoration: none;
+	color: black;
+}
+.movie img{
+	position: absolute;
+	width: 240px;
+	height: 300px;
+	border-radius: 10px;
+	border: .5px solid black;
+	box-shadow: 10px 10px  10px 2px #4A4141;
+	margin: 10px 20px 2px 10px;
+	transition: 0.5s;
+}
+.movie h3{
+	color: white;
+	font-size: 35px;
+	width: 230px;
+	margin: 20px 10px 0px 15px;
+	position: absolute;
+	text-align: center;
+	background: #4A4141;
+}
+.torrent{
+	position: absolute;
+	width: 35px;
+	margin-left: 20px;
+	height: auto;
+}
+.movies .direct{
+	position: absolute;
+	line-height: 25px;
+	margin: 150px 0px 0px 15px;
+	color: green;
+	font-size: 35px;
+	text-shadow: 1px 1px #4A4141;
+}
+.movies .direct:hover{
+	font-size: 60px;
+}
+.direct{
+	animation: colorchange1 1s infinite;
+}
+@keyframes colorchange1{
+ 	0%{color:green ;}
+ 	50%{color:white ;}
+ 	100%{color:green ;}
+}
+.series{
+	width: 240px;
+	height: 300px;
+	float: left;
+	margin: auto;
+	margin: 25px 25px 25px 25px;
+	border: 0px solid black;
+}
+.series a{
+	text-decoration: none;
+	color: black;
+}
+.series img{
+	position: absolute;
+	width: 240px;
+	height: 300px;
+	border-radius: 10px;
+	border: .5px solid black;
+	box-shadow: 10px 10px  10px 2px #4A4141;
+	margin: 10px 20px 2px 10px;
+	transition: 0.5s;
+}
+.series h3{
+	color: white;
+	width: 230px;
+	margin: 20px 10px 0px 15px;
+	position: absolute;
+	text-align: center;
+	background: #4A4141;
+	backface-visibility: 50%;
+}
+.series .torrent{
+	display: none;
+	position: absolute;
+	width: 35px;
+	margin-left: 20px;
+	height: auto;
+}
+.series .direct{
+	position: absolute;
+	line-height: 25px;
+	margin: 80px 10px 0px 15px;
+	text-align: center;
+	color: green;
+	font-size: 22px;
+	text-shadow: 1px 1px #4A4141;
+
+}
+.listep{
+	height: 120px;
+	width: 220px;
+	list-style: none;
+	float: right;
+	width: 100%;
+}
+.listep li{
+	display: inline-block;
+	background: white;
+	margin-right: 117px;
+	margin-bottom: 40px;
+}
+.listep li a{
+	text-decoration: none;
+}
+.listep li a:hover{
+	font-size: 45px;
+}
+.sd{display: none;}
+#latest{}
+#bollywood{display: none;}
+#hollywood{display: none;}
+#netflix{display: none;}
+#prime{display: none;}
+
+footer{
+	height: 300px;
+	clear: both;
+	background: grey;
+	width: 100%;
+	bottom: 0px;
+}
+.footer1{
+	width: 50%;	
+	font-size: 40px;
+	padding-top: 45px;
+	margin-left: 120px;
+	line-height: 33px;
+	color: #fff;
+}
+.footer1 h3{
+	margin-bottom: 	25px;
+	margin-top: 50px;
+}
+.footer2{
+	width: 50%;
+}
+.bar-icon{
+	color: white;
+	display: none;
+	float: right;
+	position: absolute;
+	right: 0px;
+}
+.seriesimg{
+	width: 250px;
+	height: 375px;
+}
+.seriesimg:hover{
+	background-filter: brightness(50%);
+}
+.movies .seriesimg{
+	background-image:  url(https://hdmovieshub.cc/wp-content/uploads/2020/03/dare-me-season-1-in-hindi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.movies .seriesimg .listep1{
+	list-style: none;
+	float: right;
+	width: 100%;
+}
+.movies .seriesimg .listep1 li{
+	display: inline-block;
+}
+.movies .seriesimg .listep1 li a{
+	text-decoration: none;
+}
+.movies .seriesimg .listep1 li a:hover{
+	font-size: 45px;
+}
+/*.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}*/
+@media only screen and (max-width: 1340px){
+	header h1{font-size: 50px;}
+}
+@media only screen and (max-width: 1275px){
+	header h1{font-size: 40px;}
+}
+@media only screen and (max-width: 1220px){
+	header h1{font-size: 35px;}
+
+}
+@media only screen and (max-width: 1190px){
+	header{
+		height: 45px;
+		line-height: 45px;
+		margin: 0px;
+	}
+	header img{
+		padding: 0px;
+		margin: 0px;
+		height: 45px;
+		width: auto;
+		line-height: 45px;
+		margin-left: 25px;
+		margin-top: 5px;
+	}
+	header h1{
+		line-height: 45px;
+		position: absolute;
+		margin-left: 395px;
+	}
+	header .bar-icon{display: inline-block;
+		margin-right: 25px; 
+		float: right;
+		line-height: 45px;
+	}
+	header #bar-list{
+		display: none;
+	}
+	header ul{
+		width: 22%;
+		margin-top: 55px; 
+		height: 3500px;
+		background: lightgrey;
+	}
+	header ul li{
+		line-height: 4px;
+		font-size: 25px;
+		margin-bottom: 35px;
+	}
+	header ul li a{
+		text-decoration: none;
+		color: hotpink;
+		padding-bottom: 5px; 
+	}
+	header ul li a:hover{
+		border-bottom: 1px solid hotpink;
+	}
+	.downloader{
+		display: none;
+	}
+	main{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	main h1{
+		margin: 0px;
+	}
+	.movies{
+		width: 100%;
+	}
+	.movies .movie{
+	width: 240px;
+	height: 300px;
+	float: left;
+	margin: 25px 25px 25px 25px;
+	border: 0px solid black;
+}
+}

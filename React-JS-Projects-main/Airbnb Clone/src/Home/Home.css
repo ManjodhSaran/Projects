@@ -1,0 +1,9 @@
+.home {
+}
+.home__section {
+  display: flex;
+  padding: 30px;
+}
+.home__section > * {
+  flex: 0.3333;
+}

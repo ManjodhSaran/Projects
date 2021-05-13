@@ -1,0 +1,13 @@
+.contact {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.contact__email > span {
+  font-weight: bolder;
+}
+.contact__email > span:hover {
+  text-decoration: underline;
+  color: royalblue;
+}

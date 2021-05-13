@@ -1,0 +1,69 @@
+.videoCard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  background-color: #fff;
+}
+
+.videoCard > video {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.videoCard__sidebar {
+}
+
+.videoCard__footer {
+  position: relative;
+  bottom: 120px;
+  color: #fff;
+  display: flex;
+  padding: 0px 20px 10px;
+}
+.videoCard__footerText {
+  flex: 1;
+}
+.videoCard__footer > img {
+  height: 50px;
+  object-fit: contain;
+  filter: invert(1);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+.spin {
+  animation: spinTheRecord infinite 5s linear;
+}
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ticker {
+  height: fit-content;
+  margin-left: 30px;
+  width: 60%;
+}
+.ticker__element > p {
+  /* padding-top: 7px; */
+}
+
+.footer__icon {
+  position: absolute;
+}
+.footer__desc {
+  margin-bottom: 10px;
+}
+.videoCard__sidebar {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.sidebar__button {
+  padding: 20px;
+  text-align: center;
+}
