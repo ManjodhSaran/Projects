@@ -1,0 +1,126 @@
+.cheatSheet {
+  /* padding: 20px; */
+}
+.cheatSheet__data {
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll; */
+  /* height: 1000px; */
+}
+.qa {
+  padding: 5px;
+  margin: 5px;
+  overflow: hidden;
+  transition: height 3s ease-in-out;
+  min-height: 50px;
+}
+.q {
+  background-color: #e5e8b6;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 100;
+  margin: 0 !important;
+}
+.a {
+  padding: 5px;
+  background: #b4c4ae;
+  transform: translate(0, 2000%);
+  transition: all 3s ease-in-out !important;
+  display: none;
+  z-index: 50;
+  margin: 0 !important;
+  /* position: absolute; */
+}
+.add__qa {
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.add__qa > h3 > span {
+  background: whitesmoke;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.add__qa > h3 > span > span {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+}
+.add_a {
+  display: flex;
+  flex-direction: column;
+}
+.add_a > div {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+.add_a > div > h3 {
+  /* color: lightgrey; */
+  font-weight: 400;
+  margin-right: 10px;
+}
+.add_a > div > input {
+  background: #fff;
+}
+.a > img {
+  width: 50vw;
+  object-fit: contain;
+}
+.a__show {
+  transform: translate(0, 0%);
+  transition: all 3s ease-in-out !important;
+  display: block;
+  /* position: relative; */
+}
+.add__qa__form {
+}
+.add__qa__form > div > input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+}
+.add__qa__form > button {
+  border: none;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.add__qa__form > button:hover {
+  opacity: 0.8;
+}
+.cheatSheet__switch {
+  position: fixed;
+  right: 20px !important;
+  top: 60px !important;
+
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .cheatSheet {
+    padding: 0;
+  }
+  .qa {
+    padding: 0px;
+    margin: 0px;
+  }
+  .cheatSheet__switch {
+    display: none;
+  }
+  .a > img {
+    width: 90vw;
+    object-fit: contain;
+  }
+}

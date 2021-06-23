@@ -1,0 +1,14 @@
+.header {
+  background-color: #586994;
+}
+.header__container {
+  width: 65%;
+  margin: auto;
+  color: #7d869c;
+}
+.header__container > h1 {
+  cursor: pointer;
+}
+.header__container > h1:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,19 @@
+.subjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.subject {
+  padding: 15px 10px;
+  margin: 20px;
+  border-radius: 10px;
+  color: #e5e8b6;
+  text-decoration: none !important  ;
+  background-color: #576060;
+  cursor: pointer;
+}
+.subject:hover {
+  opacity: 0.8;
+  color: #c3d100 !important;
+}
