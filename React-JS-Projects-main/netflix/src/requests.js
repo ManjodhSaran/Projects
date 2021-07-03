@@ -1,5 +1,5 @@
 const API_KEY = "2260586fb0e5e8267be6ea8854149076";
-// it`s Clone so is don`t hide API KEY
+
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
