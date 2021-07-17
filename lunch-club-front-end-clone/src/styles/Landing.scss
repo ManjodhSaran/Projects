@@ -1,0 +1,512 @@
+@font-face {
+  font-family: "Faktum Bold";
+  src: url("../assets/fonts/FactumBold.otf");
+}
+.signup {
+  background-color: #f4f4f3;
+}
+.signup__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  button {
+    color: #456add;
+    border: 1px solid rgb(69, 106, 221);
+    border-radius: 5px;
+    height: 38px;
+    padding: 0px 12px;
+    background-color: transparent;
+    font-weight: 600;
+  }
+}
+.signup__content {
+  display: flex;
+  padding: 24px 48px 100px;
+  height: 85vh;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+.signup__contentLeft {
+  align-self: center;
+  width: 40%;
+  max-width: 560px;
+  margin-top: 24px;
+  h1 {
+    font-size: 66px;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    color: rgb(38, 45, 68);
+    font-weight: 700;
+  }
+  p {
+    margin-top: 24px;
+    width: 82%;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgb(79, 84, 103);
+  }
+}
+.signup__form {
+  border: none;
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  box-shadow: rgba(38, 45, 68, 0.1) 0px 0px 23px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup__google {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0px 16px;
+  height: 46px;
+  border: 1px solid rgb(69, 106, 221);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+  background-color: transparent;
+  img {
+    margin: 0px 16px 0px 0px;
+    width: 18px;
+    height: 18px;
+  }
+  p {
+    margin: 0px;
+    font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    color: rgb(69, 106, 221);
+    font-feature-settings: "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+}
+.signup__or {
+  text-align: center;
+  font-weight: 600;
+}
+.signup__withEmail {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  input {
+    margin-bottom: 0px;
+    font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    color: rgb(91, 91, 91);
+    font-feature-settings: "cv11";
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(91, 91, 91) 0px 0px 0px 1px inset;
+    appearance: none;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 18px;
+    height: 44px;
+    width: 100%;
+    color: #5b5b5b;
+  }
+  button {
+    border-radius: 0px 6px 6px 0px;
+    white-space: nowrap;
+    background-color: rgb(69, 106, 221);
+    box-shadow: rgb(69, 106, 221) 0px 0px 0px 1px inset;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 600;
+    &:hover {
+      background-color: rgb(69, 106, 221);
+    }
+  }
+}
+.loginInstead {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px;
+  p {
+    width: fit-content;
+    margin: 0px;
+    font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    color: rgb(79, 84, 103);
+  }
+  a {
+    color: rgb(69, 106, 221);
+    transition: all 0.2s ease 0s;
+    text-decoration: underline rgb(69, 106, 221);
+  }
+}
+
+.howitworks {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  .downArrowIcon {
+    margin-top: -90px;
+    margin-bottom: 30px;
+  }
+  h4 {
+    color: rgb(49, 54, 90);
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: "Faktum SemiBold";
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: rgb(38, 45, 68);
+    font-weight: 800;
+    margin-bottom: 30px;
+    position: relative;
+    img {
+      position: absolute;
+      right: 0;
+      bottom: -9px;
+      width: 112px;
+    }
+  }
+  .howitworks__cards {
+    display: flex;
+    justify-content: space-between;
+    .howitworks__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: left;
+      padding: 0px;
+      img {
+        height: 200px;
+      }
+      p {
+        font-size: 21px;
+        margin-top: 48px;
+        width: 80%;
+        text-align: center;
+        color: rgb(38, 45, 68);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.pressHighlight {
+  background-color: rgb(38, 45, 68);
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  h4 {
+    color: whitesmoke;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    margin-top: 24px;
+  }
+  .pressHighlight__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 48px;
+    margin: 80px auto;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    .pressHighlight__card {
+      background-color: rgb(69, 106, 221);
+      opacity: 0.7;
+      border-radius: 5px;
+      transition: all 0.2s ease 0s;
+      width: 300px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-right: 50px;
+
+      img {
+        vertical-align: middle;
+      }
+      &:hover {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .investors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 48px;
+    margin: 0px auto;
+    h4 {
+      color: rgb(255, 255, 255);
+    }
+    .investors__cards {
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 48px;
+      margin: 40px auto;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      .investors__card {
+        img {
+          opacity: 0.7;
+          transition: all 0.2s ease 0s;
+          cursor: pointer;
+        }
+
+        &:hover {
+          img {
+            opacity: 1;
+            transform: scale(1.01);
+          }
+        }
+      }
+    }
+  }
+}
+
+.joinclub {
+  width: 100%;
+  padding: 100px 48px;
+  background-color: rgb(248, 170, 30);
+  background-image: url("../assets/icons/streak.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .joinclub__content {
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: left;
+    padding: 0px;
+    .joinclub__left {
+      width: 50%;
+      margin-right: 48px;
+      h4 {
+        color: rgb(49, 54, 90);
+        opacity: 0.8;
+        letter-spacing: 1px;
+        font-size: 12px;
+      }
+      h1 {
+        color: rgb(38, 45, 68);
+        margin-top: 24px;
+      }
+    }
+    .joinclub__right {
+      width: 30%;
+      h4 {
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: #594d4e;
+      }
+    }
+  }
+}
+
+.signup__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 48px;
+
+  .signup__footerStart {
+    height: 40px;
+    background-color: rgb(244, 244, 243);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      margin-bottom: 0px;
+      font-family: "Inter Regular", -apple-system, BlinkMacSystemFont,
+        sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+      color: rgb(69, 106, 221);
+      font-feature-settings: "cv11";
+      -webkit-font-smoothing: antialiased;
+    }
+    p {
+      margin: 0;
+      height: 20px;
+      background-color: rgb(69, 106, 221);
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-left: 8px;
+      color: rgb(255, 255, 255);
+      opacity: 1;
+      font-size: 8px;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .signup__footerCenter {
+    * {
+      margin-right: 5px;
+    }
+  }
+  .signup__footerEnd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: rgb(69, 106, 221);
+      cursor: pointer;
+    }
+    img {
+      height: 45px;
+      margin: 24px;
+      border-radius: 5px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .signup__content {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .signup__content {
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    height: fit-content;
+  }
+  .signup__contentLeft {
+    width: 100%;
+    padding: 0px 16px;
+    align-self: unset;
+    margin: auto;
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+  .signup__form {
+    width: 100%;
+    padding: 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  .signup__google {
+    justify-content: center !important;
+  }
+  .signup__or {
+    text-align: center;
+  }
+  .signup__withEmail {
+    margin: 0 !important;
+    input {
+      margin: 0 !important;
+    }
+  }
+  .loginInstead {
+    display: none;
+  }
+
+  .howitworks {
+    h1 {
+      font-size: 30px;
+      img {
+        width: 75px;
+      }
+    }
+    .howitworks__cards {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+
+  .pressHighlight {
+    h1 {
+      font-size: 30px;
+    }
+
+    .investors {
+      padding: 0px 20px;
+      .investors__cards {
+        width: 100%;
+        padding: 0;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .joinclub {
+    padding: 50px 15px;
+    .joinclub__content {
+      display: flex;
+      flex-direction: column;
+      .joinclub__left {
+        width: 100%;
+        margin: 0;
+        h1 {
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+      .joinclub__right {
+        width: 100%;
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .signup__footer {
+    padding: 10px;
+
+    .signup__footerEnd {
+      p {
+        margin-top: 10px;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}

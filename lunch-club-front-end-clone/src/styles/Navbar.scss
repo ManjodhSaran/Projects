@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  position: relative;
+}
+.navbar__item {
+  display: flex;
+  background-color: rgb(231, 231, 234);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navbar__dropDownIcon {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__avatar {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.navbar__icon {
+  height: 20px !important;
+  width: 20px !important;
+  color: #000;
+}
+
+.navbar--active {
+  background-color: rgb(64, 96, 197);
+  .navbar__icon {
+    color: #fff;
+  }
+}
+
+.navbar__dropDown {
+  position: absolute;
+  top: 54px;
+  right: 64px;
+  bottom: unset;
+  width: 293px;
+  margin: 0px;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid rgb(224, 229, 247);
+  padding: 8px 16px;
+  overflow-y: scroll;
+  max-height: 420px;
+}
+
+.dropDown__item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  p {
+    margin-bottom: 0px;
+    font-family: "Inter Bold", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(17, 17, 17);
+    font-feature-settings: "cv11";
+  }
+
+  &:hover {
+    background-color: #c8c8c9;
+  }
+}
+.navbar__itemIcon {
+  height: 15px !important;
+  width: 15px !important;
+}
+.dropDown__itemIconContainer {
+  padding: 5px;
+}
+.dropDown__userInfo {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  .dropDown__avatar {
+    height: 50px !important;
+    width: 50px !important;
+    transition: all 0.2s ease 0s;
+  }
+  .dropDown__name {
+    margin-left: 10px;
+    flex: 1;
+    h3 {
+      margin-bottom: 0px;
+      font-family: "Inter Bold", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.3;
+      color: rgb(17, 17, 17);
+      font-feature-settings: "cv11";
+      font-weight: 700;
+    }
+    h4 {
+      margin-bottom: 0px;
+      transform-origin: left bottom;
+      font-size: 14px;
+      transform: scaleX(1);
+      color: rgb(69, 106, 221);
+      position: relative;
+      font-weight: 700;
+    }
+  }
+}
+.dropDown__score {
+  color: rgb(17, 17, 17);
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0px;
+  height: 24px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  // overflow: hidden;
+  border: 1px solid rgb(232, 232, 232);
+  transition: all 0.2s ease 0s;
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  img {
+    height: 10px;
+    margin-top: 1.5px;
+  }
+}

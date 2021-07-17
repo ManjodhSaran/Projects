@@ -1,0 +1,28 @@
+.userActivityCard {
+  width: 140px;
+  height: 69px;
+  background-color: rgb(246, 246, 247);
+  border-radius: 5px;
+  margin: 4px;
+  padding: 8px 16px;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  > .upper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px;
+    p {
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+  > p {
+    margin-bottom: 0px;
+    font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    color: rgb(91, 91, 91);
+  }
+}

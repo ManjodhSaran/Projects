@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.MuiButtonBase-root {
+  text-transform: unset !important;
+}
+.app {
+  background-color: #f4f4f3;
+  min-height: 100vh;
+}

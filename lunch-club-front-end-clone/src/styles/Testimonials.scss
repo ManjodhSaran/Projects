@@ -1,0 +1,116 @@
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+  mask-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 30%,
+    from(rgba(0, 0, 0, 0)),
+    to(rgb(0, 0, 0))
+  );
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 30%,
+    from(rgba(0, 0, 0, 0)),
+    to(rgb(0, 0, 0))
+  );
+  height: 90%;
+}
+.testimonials__row1,
+.testimonials__row2 {
+  height: 100%;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testimonial {
+  width: 300px;
+  margin-bottom: 24px;
+  background: #fff;
+  padding: 20px;
+}
+.testimonial__header {
+  margin-bottom: 16px;
+  display: flex;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  > div {
+    margin-left: 15px;
+    h4 {
+      font-family: "Inter SemiBold", -apple-system, BlinkMacSystemFont,
+        sans-serif;
+      font-size: 14px;
+      color: rgb(38, 45, 68);
+      transition: all 0.2s ease 0s;
+    }
+    p {
+      font-size: 14px;
+      color: rgb(38, 45, 68);
+      opacity: 0.4;
+      transition: all 0.2s ease 0s;
+    }
+  }
+}
+.testimonial__content {
+  p {
+    font-size: 18px;
+    color: rgb(38, 45, 68);
+    transition: all 0.2s ease 0s;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonials {
+    width: 100%;
+    height: 100%;
+  }
+  .testimonial {
+    width: 500px !important;
+    padding: 10px;
+  }
+  .testimonial__header {
+    margin-bottom: 10px;
+  }
+  .testimonial__content {
+    p {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .testimonials {
+    overflow: scroll;
+    margin: 50px 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+    mask-image: unset;
+    -webkit-mask-image: unset;
+    height: fit-content;
+  }
+  .testimonials__row1 {
+    display: none;
+  }
+  .testimonials__row2 {
+    width: 100%;
+    display: flex;
+  }
+  .testimonial {
+    width: 300px;
+    height: fit-content;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .testimonial__header {
+    width: 300px;
+  }
+}

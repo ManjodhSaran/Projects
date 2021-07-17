@@ -1,0 +1,38 @@
+.toggleOption {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: left;
+  padding: 16px 16px 16px 56px;
+  margin-top: 4px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border: 1px solid rgb(202, 202, 208);
+  border-radius: 5px;
+  .toggleOption__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0px;
+
+    h3 {
+      margin-bottom: 0px;
+      font-family: "Inter Bold", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.3;
+      color: rgb(17, 17, 17);
+      font-feature-settings: "cv11";
+    }
+    p {
+      margin-bottom: 0px;
+      font-family: "Inter Regular", -apple-system, BlinkMacSystemFont,
+        sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+      color: rgb(91, 91, 91);
+      font-feature-settings: "cv11";
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}

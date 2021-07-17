@@ -1,0 +1,54 @@
+.editField {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-height: 38px;
+  position: relative;
+  transition: all 100ms ease 0s;
+  box-sizing: border-box;
+  border: 1px solid rgb(202, 202, 208);
+  outline: 0px !important;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  img {
+    height: 20px;
+  }
+  input {
+    margin: 2px 2px 2px 16px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    visibility: visible;
+    color: rgb(91, 91, 91);
+    box-sizing: border-box;
+    font-size: 14px;
+    flex: 1;
+    outline: 0;
+    border: 0;
+    background: transparent;
+  }
+  button {
+    width: fit-content;
+    display: inline;
+    user-select: none;
+    margin: 0px auto;
+    max-width: 100%;
+    padding: 0px 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    border-radius: 5px;
+    font-feature-settings: "cv11";
+    border: none;
+    height: 24px;
+    box-shadow: rgb(202, 202, 208) 0px 0px 0px 1px inset;
+    font-family: "Inter SemiBold", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+  }
+}

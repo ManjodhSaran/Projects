@@ -1,0 +1,39 @@
+.faq {
+}
+.faq__content {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-family: "Inter Bold", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(17, 17, 17);
+    margin-bottom: 24px;
+    font-feature-settings: "cv11";
+  }
+}
+.MuiAccordionSummary-root.Mui-expanded {
+  border: 0 !important;
+  box-shadow: 0 !important;
+}
+.MuiTypography-body1 {
+  margin-bottom: 0px !important;
+  font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  color: rgb(91, 91, 91) !important;
+  font-feature-settings: "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+.contactUs__cards {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px;
+}

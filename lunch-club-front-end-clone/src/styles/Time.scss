@@ -1,0 +1,42 @@
+.meeting__time {
+  margin-bottom: 0px;
+  font-family: "Inter Regular", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #acacac !important;
+  font-feature-settings: "cv11";
+  -webkit-font-smoothing: antialiased;
+
+  font-weight: 600;
+  width: 66px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  &:hover {
+    background: #c7e5e4;
+    color: #47a8a5 !important;
+  }
+}
+.meeting__time--selected {
+  transition: all 0.2s ease 0s;
+  width: 66px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: rgb(71, 168, 165);
+  color: #fff !important;
+  &:hover {
+    background-color: rgb(71, 168, 165) !important;
+    color: #fff !important;
+  }
+}
+.meeting__time--hidden {
+  display: hidden;
+}
