@@ -1,0 +1,7 @@
+.flags {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  flex: 1;
+  background-color: inherit;
+}

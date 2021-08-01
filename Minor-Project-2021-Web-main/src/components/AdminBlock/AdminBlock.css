@@ -1,0 +1,45 @@
+.adminBlock {
+  width: 100vw;
+  height: 90vh;
+  /* background-color: rgb(172, 171, 171); */
+  /* z-index: 101; */
+  margin-top: 20px;
+  flex: 1;
+}
+.adminHeader {
+  display: flex;
+  /* padding: 0px 20px; */
+  background-color: #fff;
+  /* position: absolute; */
+}
+.adminHeader > * {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.adminBody {
+  overflow: scroll;
+  height: 100%;
+  background-color: rgb(172, 171, 171);
+  margin-bottom: 10px;
+}
+.adminHeader p {
+  margin: 0;
+  /* margin-right: 25px; */
+  padding: 10px;
+}
+.adminHeader > *:hover {
+  text-decoration: none;
+  background-color: rgb(172, 171, 171);
+  color: #fff;
+}
+.notAccess {
+  color: red;
+  font-weight: bolder;
+  background-color: yellow;
+  text-align: center;
+}
+.adminHeader--acive {
+  background-color: rgb(172, 171, 171);
+}

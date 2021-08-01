@@ -1,0 +1,16 @@
+.flagCard {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+  justify-content: space-between;
+}
+.flagCard__Info {
+}
+.flagCard__Action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flag__button {
+  text-transform: inherit !important;
+}

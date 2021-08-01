@@ -1,0 +1,17 @@
+.messageCard {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  font-weight: 500;
+}
+.messageCard__info > h3 > span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.messageCard__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
