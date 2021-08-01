@@ -1,0 +1,135 @@
+.userPage {
+  position: relative;
+}
+.userPage__container {
+  min-width: 500px;
+  min-height: 500px;
+  padding: 40px 60px;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  border-radius: 18px;
+  box-shadow: 5px 5px #888888;
+}
+.userPage__info {
+  display: flex;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+.userPage__info p {
+  font-weight: 500;
+}
+.userPage__avatar {
+  width: 60px !important;
+  height: 60px !important;
+  margin-right: 60px;
+}
+.userPage__infoNote {
+  color: blue;
+  font-weight: 300;
+  font-size: 12px;
+}
+.userPage__note {
+  position: absolute;
+  bottom: 10px;
+  color: skyblue;
+  text-decoration: underline;
+  font-style: italic;
+  margin: auto;
+}
+
+.userApps {
+  border-top: 1px solid blue;
+  overflow: scroll;
+  min-height: 250px;
+  max-height: 400px;
+}
+
+.userPage__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.userPage__container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.userApps__app {
+  padding: 10px;
+  line-height: 5px;
+  border: 2px solid #8be4eb;
+  box-sizing: unset;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  position: relative;
+}
+.userApps__app > h4 {
+  border-bottom: 2px solid skyblue;
+  padding: 0 5px;
+}
+
+.userApps__app > p {
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.userPage__info > div > p > span {
+  color: rgba(248, 245, 245, 0.1);
+  text-transform: lowercase;
+  font-style: italic;
+}
+.userApps__appButtonGoto {
+  padding: 10px 20px;
+  background-color: #18e5ec;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.userApps__appButton {
+  padding: 10px 20px;
+  background-color: #377a30;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.userApps__appButton--Private {
+  background-color: #273043;
+}
+.userApps__app button:hover {
+  opacity: 0.8;
+}
+.userApps__appButtonDelete {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.userApps__appButtonDelete--restore {
+  background-color: gray;
+}
+@media screen and (max-width: 950px) {
+  .userPage__container {
+    width: 95vw;
+    height: 90vh;
+    padding: 0;
+    transform: scale(0.75);
+  }
+}

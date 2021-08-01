@@ -1,0 +1,139 @@
+.setupApp {
+  padding: 40px 60px;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  border-radius: 18px;
+  min-height: 150px;
+  min-width: 150px;
+  box-shadow: 5px 5px #888888;
+}
+.setupApp__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.setupApp__header > h2 {
+  flex: 1;
+  border-bottom: 2px solid #8ae4e9;
+  padding-bottom: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.setupApp__admin {
+  display: flex;
+}
+.setupApp__error {
+  color: red;
+  text-align: center;
+}
+/* PAGE 1 */
+.setupApp__page1 {
+  width: 100%;
+  margin-top: 40px;
+}
+.setupApp__page1Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.setupApp__page1Form > * {
+  margin-bottom: 20px;
+}
+.setupApp__accessDenied {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.setupApp__page2 {
+}
+.setupApp__page2 > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.setupPage__formInput {
+  outline: none !important;
+  border: none !important;
+  border-bottom: 1px solid skyblue !important;
+  padding: 20px 10px !important;
+  padding-bottom: 0 !important;
+}
+.setupApp__page2 > form > * {
+  margin-bottom: 20px;
+}
+.setupPage__formButton {
+  width: fit-content;
+  border: none;
+  background: #8ae3ea;
+  padding: 10px;
+  border-radius: 999px;
+  color: #fff !important;
+}
+.setupPage__formIcon {
+  font-size: 38px !important;
+}
+.setupApp__reset {
+  margin: auto;
+  color: red;
+  margin-top: 40px;
+}
+.setupApp__iconBack {
+  /* padding: 10px; */
+}
+.setupApp__iconButton {
+  margin-right: 10px !important;
+}
+/* PAGE 3 */
+.setupApp__page3 {
+  display: flex;
+  flex-direction: column;
+}
+.setupApp__page3 > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subjectForm__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.setupPage__formInputName {
+  width: 150px;
+  margin-right: 40px;
+}
+.setupPage__formInputID {
+  width: 100px;
+}
+/* PAge 4 */
+.setupApp__page4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.setupApp__info {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.setupApp__info > * {
+  margin-right: 25px;
+  font-weight: 500;
+}
+.setupApp__subjects {
+  text-align: center;
+  border-bottom: 1px solid skyblue;
+  margin: 25px 0;
+}
+.setupApp__subjects > h5 {
+  border-bottom: 1px solid skyblue;
+  padding-bottom: 15px;
+}
+.setupApp__subject {
+  display: flex;
+  justify-content: space-evenly;
+}
