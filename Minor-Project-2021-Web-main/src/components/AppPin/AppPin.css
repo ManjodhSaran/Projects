@@ -1,0 +1,23 @@
+.appPin{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0,0,.8);
+    position: absolute;
+    display: grid;
+    place-content: center;
+    z-index: 1500;
+}
+.appPin__container{
+    width: 30vw;
+    height: 30vh;
+    background: rgba(0, 0,0,.9);
+    display: grid;
+    place-content: center;
+    border-radius: 39px;
+}
+.appPin__container>input{
+    border: 0;
+    outline: 0;
+    background: rosybrown;
+    transform: scale(3);
+}

@@ -1,0 +1,77 @@
+.androidApp {
+  padding: 40px 60px;
+  background-color: #fff;
+  place-content: center;
+  border-radius: 18px;
+  box-shadow: 5px 5px #888888;
+  position: relative;
+  display: flex;
+  min-width: 800px;
+  min-height: 700px;
+}
+.androidApp__left {
+}
+.androidApp__right {
+  margin-left: 80px;
+}
+.apkButton {
+  background-color: black !important;
+  color: white !important;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  /* cursor: pointer !important; */
+}
+.android__demo {
+  transition: all 0.3s ease-in-out;
+}
+.android__demo:hover {
+  transform: scale(1.07);
+}
+
+/* .android__img {
+  height: 350px;
+  -moz-transform: scale(0) rotate(25deg) translateX(45px) translateY(25px)
+    skewX(20deg) skewY(15deg);
+  -webkit-transform: scale(0) rotate(25deg) translateX(45px) translateY(25px)
+    skewX(20deg) skewY(15deg);
+  -o-transform: scale(0) rotate(25deg) translateX(45px) translateY(25px)
+    skewX(20deg) skewY(15deg);
+  -ms-transform: scale(0) rotate(25deg) translateX(45px) translateY(25px)
+    skewX(20deg) skewY(15deg);
+  transform: scale(0) rotate(25deg) translateX(45px) translateY(25px)
+    skewX(20deg) skewY(15deg);
+} */
+
+@media only screen and (max-width: 600px) {
+  .androidApp {
+    /* flex-direction: column; */
+    display: grid;
+    place-content: center;
+    padding: 0;
+    padding-top: 10px;
+    min-width: 100%;
+    min-height: 90%;
+  }
+  .apkButton {
+    /* bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; */
+    width: 200px;
+  }
+  .androidApp__left > h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .androidApp__right {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .android__demo {
+    width: 300px;
+    object-fit: contain;
+    padding: 20px;
+  }
+}

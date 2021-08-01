@@ -1,0 +1,11 @@
+.bookmarks {
+  width: 100vw;
+  height: 80vh;
+  background: rgb(204, 211, 197);
+}
+.bookmarks__list {
+  padding: 20px;
+}
+.bookmarks__list > h3 {
+  border-bottom: 1px solid #000;
+}
