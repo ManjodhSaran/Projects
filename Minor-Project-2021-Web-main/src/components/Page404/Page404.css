@@ -1,0 +1,10 @@
+.page404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page404 button {
+  margin: auto !important;
+}
+.page404__button {
+}

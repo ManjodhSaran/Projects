@@ -1,0 +1,12 @@
+.notification {
+  position: absolute;
+  width: fit-content;
+  height: 35px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1510;
+}
+.notification__container {
+  background: rgba(146, 198, 228, 0.5);
+  padding: 10px;
+}

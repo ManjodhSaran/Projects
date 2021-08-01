@@ -1,0 +1,117 @@
+.notesCard {
+  display: flex;
+  flex-direction: column;
+}
+.notesCard__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border-bottom: 1px solid gray; */
+}
+.notesCard:hover {
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.notesCard__Details > h3 {
+  text-transform: capitalize;
+}
+.notesCard__Details {
+  flex: 1;
+  cursor: pointer;
+}
+.notesCard__Details:hover {
+  opacity: 0.8;
+}
+.notesCard__Details > h4 {
+  font-size: 14px;
+  font-weight: 350;
+}
+.notesCard__Details > h4 > span {
+  font-weight: 500;
+}
+.notesCard__buttons {
+  z-index: inherit !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.notesCard__button {
+  z-index: inherit !important;
+  margin-bottom: 10px !important;
+  text-transform: capitalize !important;
+  background-color: rgb(55, 55, 216) !important;
+  z-index: 0 !important;
+}
+.notesCard__menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.notesCard__menuIcon {
+  cursor: pointer;
+  border-radius: 999px;
+  margin-left: 10px;
+  padding: 3px;
+}
+.notesCard__menuIcon:hover {
+  background-color: rgb(224, 222, 222);
+}
+.notesCard__dropdown {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 123px;
+  right: 45px;
+  padding: 5px;
+  top: 0;
+  z-index: 110000 !important;
+  transition: all 0.2s ease-in-out !important;
+
+  box-shadow: 2px 2px;
+}
+.notesCard__dropdown > p {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  cursor: pointer;
+}
+.notesCard__dropdown > p:hover {
+  color: green;
+}
+.notesCard__titleHighlight {
+  background: transparent;
+  color: rgb(72, 72, 248);
+  font-weight: 700;
+  padding: 0;
+}
+.h3__gold {
+  color: #96830c;
+}
+@media screen and (max-width: 950px) {
+  .notesCard {
+    padding: 5px 3px;
+  }
+  .notesCard__Details > h3 {
+    font-size: 16px;
+  }
+  .notesCard__Details > h4 {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .notesCard__Details > h4 > span {
+    font-weight: bold;
+  }
+  .notesCard__button {
+    padding: 5px !important;
+    margin-right: -15px !important;
+  }
+}

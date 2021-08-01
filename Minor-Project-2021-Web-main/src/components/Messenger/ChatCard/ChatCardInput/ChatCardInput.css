@@ -1,0 +1,42 @@
+.chatCardInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid lightgrey;
+  background-color: rgb(235, 233, 233);
+  max-width: 100%;
+  border-radius: 98px;
+  position: relative;
+}
+
+.chatCardInput > .chatCardInput-form {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.chatCardInput > .chatCardInput-form > input {
+  flex: 1;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  font-size: 15px !important;
+}
+
+.chatCardInput > .chatCardInput-form > button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.chatCardInput__emojiSelector {
+  position: absolute;
+  /* bottom: -420px; */
+  bottom: 50px;
+  max-width: 100%;
+  z-index: 10000;
+}

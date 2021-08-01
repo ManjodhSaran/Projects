@@ -1,0 +1,24 @@
+.sidebarOption {
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.sidebarOption > h2 {
+  font-size: 20px;
+}
+.sidebarOption:hover {
+  background-color: rgb(255, 255, 255);
+}
+.sidebarOption--active {
+  /* color: blue; */
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 950px) {
+  .sidebarOption {
+    padding: 2px 15px;
+  }
+  .sidebarOption > h2 {
+    font-size: inherit !important;
+  }
+}

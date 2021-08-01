@@ -1,0 +1,46 @@
+.notesSearch {
+  /* width: 100%; */
+  /* z-index: 1000; */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* right: 0; */
+  flex: 1;
+  position: relative;
+  min-width: 30%;
+}
+.notesSearch__form {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+}
+.notesSearch__formInput {
+  flex: 1 !important;
+  overflow: hidden !important;
+}
+.notesSearch__formSearchIcon {
+  right: 20px !important;
+  position: absolute;
+  cursor: pointer;
+}
+.notesSearch__formGradient {
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(rgba(94, 93, 93, 0.1), transparent);
+  background-blend-mode: lighten;
+
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.notesSearch__body {
+  /* background-image: linear-gradient(rgba(255, 255, 255, 1), transparent); */
+  background: #fff;
+  max-height: 500px;
+  overflow: scroll;
+}
+.notesSearch__formClearIcon {
+  left: -10px;
+  position: absolute;
+  cursor: pointer;
+}

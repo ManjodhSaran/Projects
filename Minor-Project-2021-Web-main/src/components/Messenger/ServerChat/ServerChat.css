@@ -1,0 +1,54 @@
+.chatCard__Server {
+  background: rgb(236, 225, 225);
+  /* scroll-snap-align: start; */
+}
+.chatCard__bodyMessageServer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  align-items: center;
+  margin: 20px;
+  border-radius: 6px;
+  width: fit-content;
+  max-width: 90%;
+  background: #08d1d8;
+  position: relative;
+  z-index: unset;
+  scroll-snap-type: y mandatory;
+  border-bottom-right-radius: 0;
+}
+
+.chatCard__bodyMessageServer > h5 {
+  font-size: 14px;
+  position: absolute;
+  top: -17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: capitalize;
+  right: 0;
+  width: fit-content;
+}
+.chatCard__bodyMessageServer > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.chatCard__bodyMessageServer > p {
+  position: absolute;
+  font-size: 10px;
+  bottom: -28px;
+  right: 0px;
+}
+.chatCard__bodyMessageServer--user {
+  margin-left: auto;
+  background: #fff;
+}
+.chatCard__bodyMessageServer--user > h5 {
+  right: 0;
+}
+.chatCard__bodyMessageServer--user > h4 {
+  color: #000;
+}
+.chatCard__bodyMessageServer--left0 > h5 {
+  left: 0;
+}
