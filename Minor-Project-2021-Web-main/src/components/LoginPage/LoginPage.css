@@ -1,0 +1,51 @@
+.loginPage {
+}
+.loginPage__pin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginPage__pin > h1 {
+  /* font-size: 28px; */
+}
+.loginPage__pin > h3 {
+  color: darkgreen;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.loginPage__pin > h2 {
+  color: red;
+  font-size: 20px;
+}
+.loginPage__code {
+  /* border: none; */
+  outline: none;
+  font-size: 40px;
+  font-weight: 600;
+  color: darkgreen;
+  text-align: center;
+  text-decoration: underline;
+  max-width: 50px;
+}
+.displayNone {
+  /* display: none; */
+}
+@media screen and (max-width: 550px) {
+  .loginPage {
+  }
+  .loginPage__container {
+    display: flex;
+    align-items: center;
+  }
+  .loginPage__container > button {
+    height: fit-content;
+    font-size: 10px;
+  }
+  .loginPage__container > img {
+    width: 45vw;
+  }
+  .loginPage__header {
+    font-size: 30px;
+  }
+}

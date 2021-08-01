@@ -1,0 +1,10 @@
+.login {
+}
+.login__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__form > p {
+  margin-bottom: -10px;
+}
