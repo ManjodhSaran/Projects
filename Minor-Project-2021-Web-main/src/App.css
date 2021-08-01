@@ -1,0 +1,43 @@
+.app {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+.button {
+  outline: 0 !important;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.circle1 {
+  top: 5%;
+  right: 20%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+@media screen and (max-width: 950px) {
+  .circle1,
+  .circle2 {
+    transform: scale(0.3);
+  }
+}
