@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Notes App",
+    "slug": "notesApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/background-logo.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/background-logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.manjodhsaran.notesApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
